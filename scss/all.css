@@ -1,0 +1,202 @@
+@charset "UTF-8";
+* {
+  outline: 1px solid red;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: middle;
+  width: 100%;
+}
+
+.container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 12px;
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+.ft-20 {
+  font-size: 20px;
+}
+
+.ft-24 {
+  font-size: 24px;
+}
+
+.ft-32 {
+  font-size: 32px;
+}
+
+.ft-40 {
+  font-size: 40px;
+}
+
+@media (max-width: 992px) {
+  .ft-md-24 {
+    font-size: 24px;
+  }
+}
+
+.ft-dark {
+  color: #000;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .justify-content-sm-center {
+    justify-content: center;
+  }
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+@media (max-width: 992px) {
+  .align-items-md-start {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 992px) {
+  .flex-direction-md-column {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .flex-direction-sm-column {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 992px) {
+  header h1 {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  header h1 {
+    margin-bottom: 12px;
+  }
+}
+header h1 .logo img {
+  width: 6vw;
+  height: 6vw;
+}
+@media (max-width: 992px) {
+  header h1 .logo img {
+    width: 10vw;
+    height: 10vw;
+  }
+}
+@media (max-width: 768px) {
+  header h1 .logo img {
+    width: 20vw;
+    height: 20vw;
+  }
+}
+header nav ul li a {
+  display: block;
+  padding: 8px 0;
+  margin-left: 20px;
+  border: 3px solid transparent;
+}
+@media (max-width: 992px) {
+  header nav ul li a {
+    margin-left: 0;
+  }
+}
+header nav ul li a:hover {
+  color: rgba(152, 57, 255, 0.5);
+  border-bottom: 3px solid rgba(152, 57, 255, 0.5);
+}
+
+main .swiper {
+  min-height: 70vh;
+  background-image: url("../images/日本櫻花.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  transition: all 0.5s ease;
+  z-index: 0;
+}
+main .swiper .filter {
+  min-height: 70vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+main .swiper p {
+  text-align: center;
+  font-size: 40px;
+  color: #fff;
+}
+main .topic {
+  padding: 40px 0;
+}
+main .topic h3 {
+  margin-bottom: 8px;
+  font-size: 32px;
+  text-align: center;
+}
+main .topic ul li {
+  margin-bottom: 8px;
+  text-align: center;
+  width: 25%;
+}
+@media (max-width: 992px) {
+  main .topic ul li {
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  main .topic ul li {
+    width: 100%;
+  }
+}
+main .topic ul li img {
+  padding: 8px;
+  border-radius: 50%;
+  width: 80%;
+  transition: all 0.2s ease;
+}
+@media (max-width: 992px) {
+  main .topic ul li img {
+    width: 40%;
+  }
+}
+main .topic ul li img:hover {
+  border: 3px solid rgba(152, 57, 255, 0.5);
+}/*# sourceMappingURL=all.css.map */

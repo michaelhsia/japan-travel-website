@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./scss/reset.css" />
+    <link rel="stylesheet" href="./scss/all.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>日本旅遊推薦</title>
+  </head>
+  <body>
+    <header>
+      <div
+        class="container d-flex justify-content-space-between align-items-center flex-direction-md-column align-items-md-start"
+      >
+        <h1 class="ft-40 ft-md-24">
+          <a
+            href="#"
+            class="logo ft-dark d-flex align-items-center flex-direction-sm-column justify-content-sm-center"
+          >
+            <img src="./images/網站Logo.svg" alt="日本旅遊網站logo" />
+            <span>2023日本旅遊推薦</span>
+          </a>
+        </h1>
+        <nav>
+          <ul class="d-flex flex-direction-md-column justify-content-sm-center">
+            <li>
+              <a href="#" class="ft-24 ft-dark">
+                <i class="fa-solid fa-plane"></i>
+                日本旅遊
+              </a>
+            </li>
+            <li>
+              <a href="#" class="ft-24 ft-dark">
+                <i class="fa-solid fa-right-to-bracket"></i>
+                會員登入
+              </a>
+            </li>
+            <li>
+              <a href="#" class="ft-24 ft-dark">
+                <i class="fa-solid fa-book"></i>
+                預約行程
+              </a>
+            </li>
+            <li>
+              <a href="#" class="ft-24 ft-dark">
+                <i class="fa-solid fa-address-book"> </i>
+                聯絡我們
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="swiper d-flex justify-content-center align-items-center">
+        <div class="filter"></div>
+        <p>
+          休閒空間，特殊假期。<br />
+          安排一趟日本旅遊行程，放鬆身心。
+        </p>
+      </section>
+      <section class="topic">
+        <div class="container">
+          <h3>遊玩主題</h3>
+          <ul
+            class="d-flex justify-content-space-between align-items-center flex-wrap"
+          >
+            <li>
+              <img src="./images/北海道雪景.jpg" alt="北海道雪景" />
+              <p>北海道雪景，美不勝收</p>
+            </li>
+            <li>
+              <img src="./images/日本壽司.jpg" alt="日本壽司" />
+              <p>日本道地壽司與美食</p>
+            </li>
+            <li>
+              <img src="./images/富士山.jpg" alt="富士山" />
+              <p>富士山風景與溫泉</p>
+            </li>
+            <li>
+              <img src="./images/清水寺.jpg" alt="清水寺" />
+              <p>京都清水寺，千年古都</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <script>
+      setInterval(() => {
+        let swiperBackground = document.querySelector(".swiper");
+        if (
+          swiperBackground.style.backgroundImage ==
+          'url("../images/日本櫻花.jpg")'
+        ) {
+          swiperBackground.style.backgroundImage =
+            'url("../images/富士山2.jpg")';
+        } else if (
+          swiperBackground.style.backgroundImage ==
+          'url("../images/富士山2.jpg")'
+        ) {
+          swiperBackground.style.backgroundImage =
+            'url("../images/大阪街頭.jpg")';
+        } else {
+          swiperBackground.style.backgroundImage =
+            'url("../images/日本櫻花.jpg")';
+        }
+      }, 3000);
+    </script>
+  </body>
+</html>
